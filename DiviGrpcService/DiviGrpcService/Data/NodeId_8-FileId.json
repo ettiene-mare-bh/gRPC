@@ -1,0 +1,25 @@
+{
+    "dataKey": "VibrationChannelY_AccelerationWaveform",
+    "dataStatus": 0,
+    "date": "2024-04-25T05:00:34",
+    "fileId": 15815,
+    "gatewaySerial": null,
+    "packetId": 0,
+    "port": "Unknown",
+    "readingType": "WaveformReading",
+    "subUnit": 0,
+    "ts": 1714032755608,
+    "txId": "ab3bf296-345b-440d-aae5-af1221926390",
+    "unit": 0,
+    "value": null,
+    "valueObject": {
+        "data": [
+            -0.016661251,
+            -0.08404676,
+            -0.035914253,
+            -0.034063004
+        ],
+        "measurementReadingName": 2,
+        "samplingRate": 12800
+    }
+}

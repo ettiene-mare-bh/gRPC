@@ -1,0 +1,42 @@
+﻿syntax = "proto3";
+
+import "google/protobuf/any.proto";
+
+option csharp_namespace = "DiviGrpcService";
+
+package data;
+
+// The greeting service definition.
+service DataService {
+  // Sends a greeting
+  rpc GetData (DataRequest) returns (DataReply);
+}
+
+// The request message containing the user's name.
+message DataRequest {
+  string name = 1;
+}
+
+// The response message containing the greetings.
+message DataReply {
+    message Valueobject {
+        repeated double data = 1;
+        uint32 measurementReadingName = 2;
+        uint32 samplingRate = 3;
+    }
+
+    string dataKey = 1;
+    uint32 dataStatus = 2;
+    string date = 3;
+    uint32 fileId = 4;
+    google.protobuf.Any gatewaySerial = 5;
+    uint32 packetId = 6;
+    string port = 7;
+    string readingType = 8;
+    uint32 subUnit = 9;
+    uint64 ts = 10;
+    string txId = 11;
+    uint32 unit = 12;
+    google.protobuf.Any value = 13;
+    Valueobject valueObject = 14;
+}

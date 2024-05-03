@@ -7,7 +7,12 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Protobuf Include="Protos\greet.proto" GrpcServices="Server"/>
+        <Protobuf Include="Protos\greet.proto" GrpcServices="Server">
+               <Generator>MSBuild:Compile</Generator>
+        </Protobuf> 
+        <Protobuf Include="Protos\data.proto" GrpcServices="Server">
+          <Generator>MSBuild:Compile</Generator>
+        </Protobuf>
     </ItemGroup>
 
     <ItemGroup>
